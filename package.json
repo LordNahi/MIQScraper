@@ -1,0 +1,17 @@
+{
+  "name": "pupeteer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^5.4.3"
+  }
+}

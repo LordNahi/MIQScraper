@@ -22,13 +22,6 @@ const scraperObject = {
 
         await page.goto(this.url);
 
-        // Set viewport ...
-        // await page.setViewport({
-        //     width: 1920,
-        //     height: 3000,
-        //     deviceScaleFactor: 1,
-        // });
-
         // Set calendar constants ...
         const CAL_BUTTON_NEXT = "#accommodation > form > div > div.flatpickr-calendar.animate.inline > div.flatpickr-months > span.flatpickr-next-month";
         const CAL_BUTTON_PREV = "#accommodation > form > div > div.flatpickr-calendar.animate.inline > div.flatpickr-months > span.flatpickr-prev-month";

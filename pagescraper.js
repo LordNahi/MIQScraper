@@ -1,7 +1,7 @@
 const scraperObject = {
     url: 'https://allocation.miq.govt.nz/portal/organisation/7efc9b34-7dc1-4220-bc74-3f5558810dda/event/MIQ-DEFAULT-EVENT/accommodation',
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36",
-    cookie: "visid_incap_1875607=8iD1Q6aYQNyVuPGvuPeXFyDGEGAAAAAAQUIPAAAAAABRVYAzxYOt2xL5f4xtp63o; PHPSESSID=f5tmki92fhv4d4vfetnphsdfpc",
+    cookie: "visid_incap_1875607=8iD1Q6aYQNyVuPGvuPeXFyDGEGAAAAAAQUIPAAAAAABRVYAzxYOt2xL5f4xtp63o; incap_ses_529_1875607=WTQvKWzxH2PmOGFgBmNXB/HeIWAAAAAA0YwiziP3f40gZ1rd8/SNJg==; PHPSESSID=chfelqc014ukvhk04k8s86im7d",
 
     async scraper(browser){
         let page = await browser.newPage();
@@ -97,7 +97,7 @@ const scraperObject = {
             await page.mouse.click(rect.left + _x, rect.top + _y);
         }
 
-        // browser.close();
+        browser.close();
     }
 }
 
